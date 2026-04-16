@@ -86,7 +86,7 @@ NA = Not Available
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("MB50_T2.csv", low_memory=False)
+    df = pd.read_csv("Master.csv", low_memory=False)
 
     # Date parsing
     df['Date'] = pd.to_datetime(
@@ -413,7 +413,7 @@ filtered = data.copy()
 # Filter by selected teams
 if selected_levels:
     filtered = filtered[filtered['Competition'].isin(selected_levels)]
-    
+
 if selected_teams:
     filtered = filtered[filtered['Bowling Team'].isin(selected_teams)]
 
