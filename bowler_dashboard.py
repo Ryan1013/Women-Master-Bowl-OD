@@ -53,7 +53,7 @@ def apply_responsive_legend(fig):
             margin=dict(l=0, r=0, t=40, b=20)
         )
 
-st.title("One-Day Cup Bowling Dashboard")
+st.title("One-Day Bowling Dashboard")
 
 st.markdown("""
 <div style="
