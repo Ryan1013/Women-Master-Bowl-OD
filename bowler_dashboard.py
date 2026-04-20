@@ -313,7 +313,7 @@ teams = sorted(data['Bowling Team'].dropna().unique())
 selected_teams = st.sidebar.multiselect(
     "Bowling Team",
     teams,
-    default=["Kent Women"] if "Kent Women" in teams else teams[:1]
+    default=["Glamorgan Women"] if "Glamorgan Women" in teams else teams[:1]
 )
 
 # Bowler (dependent)
